@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pseudo Elements</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: #f1f1f1;
+			font-size: 30px;
+		}
+		/* #box::before{
+			content: "L";
+			color: red;
+			font-size: 150px;
+			font-weight: bold;
+		} */
+		#box::first-line{
+			color: red;
+		}
+		#box::first-letter{
+			color: red;
+			font-size: 150px;
+			font-weight: bold;
+		}
+		#box::selection{
+			background-color: yellow;
+		}
+		/*last-letter pseudo element*/
+		#box::after{
+			content: "Lorem ipsum dolor sit amet.";
+			color: blue;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptas quae eius nulla doloremque nam maxime aliquid. Minus, autem id.
+	<br></div>
+</body>
+</html>

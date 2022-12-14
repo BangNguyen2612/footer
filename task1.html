@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task1</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: #f1f1f1;
+		}
+		ul{
+			font-size:4rem;
+			font-weight: bold;
+		}
+		/* li:first-child{
+			color: red;
+		}
+		li:nth-child(2){
+			color: green;
+		}
+		li:nth-child(3){
+			color: blue;
+		}
+		li:nth-last-child(1){
+			color: yellow;
+		}
+		li:not(:first-child){
+			color: black;
+		}
+		li:nth-child(odd){
+			background-color: #f1f1f1;
+		}
+		li:nth-child(even){
+			background-color: #e1e1e1;
+		} 
+		li:nth-child(2n+1){
+			background-color: #f1f1f1;
+		} 
+		li:nth-child(2n){
+			background-color: #e1e1e1;
+		}*/
+		li:first-child{
+			color: green;
+			background-color:yellow;
+			width: 300px;
+		}
+		/*hover first child*/
+		li:first-child:hover{
+			color: yellow;
+			background-color:green;
+			width: 300px;
+		}
+		li:last-child{
+			color: red;
+			background-color:black;
+			width: 300px;
+		}
+		/*active last child*/
+		li:last-child:active{
+			color: black;
+			background-color:red;
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>Element1</li>
+		<li>Element2</li>
+		<li>Element3</li>
+	</ul>
+	</body>
+</html>
